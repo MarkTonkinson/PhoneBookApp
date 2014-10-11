@@ -1,0 +1,31 @@
+<div class='col-md-1'></div>
+
+<div class='col-md-2 sidebar'>
+	<h3>Add Person</h3>
+	<ul>
+		<li><input type='text' ng-model='person.name' placeholder='name'></input></li>
+		<li><input type='text' ng-model='person.number' placeholder='phone#'></input></li>
+		<li><input type='text' ng-model='person.city' placeholder='city'></input></li>
+		<li><input type='text' ng-model='person.email' placeholder='email'></input></li>
+		<li><button ng-click='submit(person.name)'>submit</button></li>
+	</ul>
+</div>
+
+<div class='col-md-1'></div>
+
+
+
+<div class='col-md-6 phonebook-view'>
+	<h3>Friends and Acquaitances</h3>
+
+	<p><input placeholder="Search your friends" type='text' ng-model='searchText'></input></p>
+	
+	<div ng-repeat='record in records | filter: searchText'> 
+		<input value='{{record.name}}' readonly></input> 
+		<!-- <input value='{{record.city}}'></input>  -->
+		<input value='{{record.number}}'readonly></input>
+		<input value='{{record.email}}' readonly></input>
+		<a href='/#/edit/{{record.name}}'><button class='btn btn-link'>Edit</button></a>
+	</div>
+
+</div>

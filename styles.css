@@ -1,0 +1,48 @@
+body {
+	background-image: url('phonebooth.jpg');
+	background-size: cover;
+	color:black;
+
+}
+
+.title-header {
+	background-color:rgba(150,150,150,.8);
+	border:5px solid black;
+	margin-bottom: 20px;
+}
+
+.login-div {
+	height:25rem;
+	color:black;
+	border: 1px black solid;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.8);
+}
+ /*These affect the phonebookview.html*/
+.sidebar {
+	color:black;
+	border: 1px black solid;
+	background-color: rgba(255,255,255,.8);
+	width:30rem;
+}
+li {
+	list-style: none;
+}
+
+.phonebook-view {
+	color:black;
+	border: 1px black solid;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,.8);
+	height: 50rem;
+	overflow: scroll;
+}
+
+/*EditView Classes*/
+.edit-top {
+	margin-top:20px;
+}
+.edit-bottom{
+	margin-top: 400px;
+}
+
